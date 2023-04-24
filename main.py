@@ -2,17 +2,16 @@ import requests
 import smtplib
 
 
-MY_EMAIL = "ritiksuniljain@gmail.com"
-PASSWORD = "fjiqjihbqojanzbq"
-RECEVIVER_EMAIL = "ritikjain7350@gmail.com"
+MY_EMAIL = "SENDER_EMAIL"               #Add Sender's/Your's Email Address
+PASSWORD = "SENDER_PASSWORD"            #Add Sender's/Your's Password
+RECEVIVER_EMAIL = "RECEVIVER_EMAIL"
 
 OWM_Endpoint = "https://api.openweathermap.org/data/2.5/onecall"
-# api_key = "6c9a1479c0c60e5bd702eb58f696ccbd"
-api_key = "69f04e4613056b159c2761a9d9e664d2"
+api_key = "XXXXXX"                      #Your openweathermap's API KEY           
 
 weather_params = {
-    "lat" : 18.5196,
-    "lon" : 73.8553,
+    "lat" : 18.5196,                    #Latitude
+    "lon" : 73.8553,                    #Longitude
     "appid" : api_key,
     "exclude": "current,minutely,daily"
 }
